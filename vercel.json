@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "buildCommand": "cd artifacts/anime-site && npm install -g pnpm && pnpm install --no-frozen-lockfile && npx vite build --config vite.vercel.config.ts",
+  "outputDirectory": "artifacts/anime-site/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
